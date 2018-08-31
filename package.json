@@ -49,6 +49,7 @@
     "database",
     "datastore",
     "Gruntfile.js",
+    "package.json",
     "modules",
     "testData.js",
     "test",
