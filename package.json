@@ -41,13 +41,6 @@
   "scripts": {
     "test": "mocha test/index.js --reporter spec --slow 500"
   },
-  "files": [
-    "database",
-    "datastore",
-    "modules",
-    "test",
-    "tools"
-  ],
   "author": "",
   "license": "Private",
   "private": true
