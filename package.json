@@ -1,10 +1,10 @@
 {
-  "name": "simpleAPI-DAL",
+  "name": "dal",
   "version": "0.0.1",
   "description": "Data access for simpleAPI applications.",
   "repository": {
     "type": "git",
-    "url": "https://github.com/reThinkData/dal.git"
+    "url": "https://github.com/RamLoginsoft/dal.git"
   },
   "dependencies": {
     "async": "^2.6.1",
@@ -42,16 +42,9 @@
     "test": "mocha test/index.js --reporter spec --slow 500"
   },
   "files": [
-    "adminData.js",
-    "apiData.js",
-    "billing.js",
-    "config.js",
     "database",
     "datastore",
-    "Gruntfile.js",
-    "package.json",
     "modules",
-    "testData.js",
     "test",
     "tools"
   ],
