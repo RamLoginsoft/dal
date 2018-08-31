@@ -2,6 +2,10 @@
   "name": "simpleAPI-DAL",
   "version": "0.0.1",
   "description": "Data access for simpleAPI applications.",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/reThinkData/dal.git"
+  }
   "dependencies": {
     "async": "^2.6.1",
     "azure": "^2.3.1-preview",
