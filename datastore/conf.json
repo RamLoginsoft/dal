@@ -1,0 +1,274 @@
+{
+  "development": {
+    "mongodb": {
+      "ssl_file": "mongodb-dev.pem",
+      "connectionString": "mongodb://SimpleAPI:simplePassword@34.231.47.90:27017/simpleAPI",
+      "_connectionString": "mongodb://SimpleAPI:simplePassword@localhost:27017/simpleAPI",
+      "connection_options": {
+        "server": {
+          "ssl": true,
+          "sslValidate": false,
+          "socketOptions": {
+            "autoReconnect": true,
+            "connectTimeoutMS": 10000,
+            "keepAlive": 120000,
+            "socketTimeoutMS": 0
+          }
+        }
+      }
+    },
+    "database": {
+      "userName": "SimpleAppUser@rib4rnh8e5",
+      "password": "(9:pA_AX\\O#v",
+      "server": "rib4rnh8e5.database.windows.net",
+      "options": {
+        "database": "Simple-Dev",
+        "connectTimout": 15000,
+        "requestTimeout": 30000,
+        "cancelTimeout": 5000,
+        "encrypt": true,
+        "tdsVersion": "7_4",
+        "debug": {
+          "packet": false,
+          "data": false,
+          "token": false,
+          "payload": false
+        }
+      }
+    },
+    "connectionPool": {
+      "max": 5,
+      "min": 1,
+      "idleTimeoutMillis": 30000,
+      "log": false
+    },
+    "azure": {
+      "blobStorage": {
+        "debug": true,
+        "containers": {
+          "paymentHistoryAssets": "payment-docs-test"
+        },
+        "account": "rethinkdata",
+        "key": "IABpJ7aZRbqy0cTCQeqzVRbVuMnsqdFR4avRTRkCbe3q8TlyBNfxe1EAZM5tc4EjLbpoQyhInAijG1bZ/Jybbg==",
+        "domain": "https://rethinkdata.blob.core.windows.net/"
+      }
+    },
+    "notifications": {
+      "mailer": {
+        "user": "azure_a06bdeabda59fc290523c610072bdd9b@azure.com",
+        "pass": "VaG6advQrEHORwYwCSkp"
+      },
+      "to": "dev-notification-testing@rethinkdata.net",
+      "from": "donotreply@simple-api.com",
+      "subject": "Database Notification - Server Hostname: $hostname, ",
+      "events": {
+        "mongodb": ["error", "disconnected", "close"],
+        "sqlserver": ["error"]
+      }
+    }
+  },
+  "demo": {
+    "mongodb": {
+      "ssl_file": "mongodb-test.pem",
+      "connectionString": "mongodb://SimpleAPI:simplePassword@52.7.93.4:27017/simpleAPI",
+      "_connectionString": "mongodb://SimpleAPI:simplePassword@localhost:27017/simpleAPI",
+      "connection_options": {
+        "server": {
+          "ssl": true,
+          "sslValidate": false,
+          "socketOptions": {
+            "autoReconnect": true,
+            "connectTimeoutMS": 10000,
+            "keepAlive": 120000,
+            "socketTimeoutMS": 0
+          }
+        }
+      }
+    },
+    "database": {
+      "userName": "SimpleAppUser@rib4rnh8e5",
+      "password": "(9:pA_AX\\O#v",
+      "server": "rib4rnh8e5.database.windows.net",
+      "options": {
+        "database": "SimpleTest_3",
+        "connectTimeout": 15000,
+        "requestTimeout": 30000,
+        "cancelTimeout": 5000,
+        "encrypt": true,
+        "tdsVersion": "7_4",
+        "debug": {
+          "packet": false,
+          "data": false,
+          "token": false,
+          "payload": false
+        }
+      }
+    },
+    "connectionPool": {
+      "max": 5,
+      "min": 1,
+      "idleTimeoutMillis": 30000,
+      "log": true
+    },
+    "azure": {
+      "blobStorage": {
+        "debug": false,
+        "containers": {
+          "paymentHistoryAssets": "payment-docs-demo"
+        },
+        "account": "rethinkdata",
+        "key": "IABpJ7aZRbqy0cTCQeqzVRbVuMnsqdFR4avRTRkCbe3q8TlyBNfxe1EAZM5tc4EjLbpoQyhInAijG1bZ/Jybbg==",
+        "domain": "https://rethinkdata.blob.core.windows.net/"
+      }
+    },
+    "notifications": {
+      "mailer": {
+        "user": "azure_a06bdeabda59fc290523c610072bdd9b@azure.com",
+        "pass": "VaG6advQrEHORwYwCSkp"
+      },
+      "to": "dev-notification-testing@rethinkdata.net",
+      "from": "donotreply@simple-api.com",
+      "subject": "Database Notification - Server Hostname: $hostname, ",
+      "events": {
+        "mongodb": ["error", "disconnected", "close"],
+        "sqlserver": ["error"]
+      }
+    }
+  },
+  "test": {
+    "mongodb": {
+      "ssl_file": "mongodb-test.pem",
+      "connectionString": "mongodb://SimpleAPI:simplePassword@52.7.93.4:27017/simpleAPI",
+      "connection_options": {
+        "server": {
+          "ssl": true,
+          "sslValidate": false,
+          "socketOptions": {
+            "autoReconnect": true,
+            "connectTimeoutMS": 10000,
+            "keepAlive": 120000,
+            "socketTimeoutMS": 0
+          }
+        }
+      }
+    },
+    "database": {
+      "userName": "SimpleAppUser@rib4rnh8e5",
+      "password": "(9:pA_AX\\O#v",
+      "server": "rib4rnh8e5.database.windows.net",
+      "options": {
+        "database": "SimpleTest_3",
+        "connectTimeout": 15000,
+        "requestTimeout": 30000,
+        "cancelTimeout": 5000,
+        "encrypt": true,
+        "tdsVersion": "7_4",
+        "debug": {
+          "packet": false,
+          "data": false,
+          "token": false,
+          "payload": false
+        }
+      }
+    },
+    "connectionPool": {
+      "max": 5,
+      "min": 1,
+      "idleTimeoutMillis": 30000
+    },
+    "azure": {
+      "blobStorage": {
+        "debug": false,
+        "containers": {
+          "paymentHistoryAssets": "payment-docs-test"
+        },
+        "account": "rethinkdata",
+        "key": "IABpJ7aZRbqy0cTCQeqzVRbVuMnsqdFR4avRTRkCbe3q8TlyBNfxe1EAZM5tc4EjLbpoQyhInAijG1bZ/Jybbg==",
+        "domain": "https://rethinkdata.blob.core.windows.net/"
+      }
+    },
+    "notifications": {
+      "mailer": {
+        "user": "azure_a06bdeabda59fc290523c610072bdd9b@azure.com",
+        "pass": "VaG6advQrEHORwYwCSkp"
+      },
+      "to": "dev-notification-testing@rethinkdata.net",
+      "from": "donotreply@simple-api.com",
+      "subject": "Database Notification - Server Hostname: $hostname, ",
+      "events": {
+        "mongodb": ["error", "disconnected", "close"],
+        "sqlserver": ["error"]
+      }
+    }
+  },
+  "production": {
+    "mongodb": {
+      "ssl_file": "MDBP.SIMPLE-API.COM.pem",
+      "ssl_key": "MDBP.SIMPLE-API.COM.pem",
+      "ssl_ca_file": "NETWORK-SOLUTIONS-CA.pem",
+      "connectionString":"mongodb://SimpleAPI:*uhY67dn#$d@mdbp1-1.simple-api.com:27017,mdbp1-2.simple-api.com:27017,mdbp1-3.simple-api.com:27017/simpleAPI?replicaSet=sapi.rs0",
+      "connection_options": {
+        "replset": {
+          "sslValidate": true,
+          "ssl": true,
+          "sslPass": "0a69cab9",
+          "auto_reconnect": true,
+          "socketOptions": {
+            "connectTimeoutMS": 10000,
+            "keepAlive": 120000,
+            "socketTimeoutMS": 0
+          }
+        }
+      }
+    },
+    "database": {
+      "userName": "SimpleAppUser@octgfb2xz6",
+      "password": "9F13ab(o)(o)!",
+      "server": "octgfb2xz6.database.windows.net",
+      "options": {
+        "database": "SimpleAPI",
+        "connectTimeout": 15000,
+        "requestTimeout": 30000,
+        "cancelTimeout": 5000,
+        "encrypt": true,
+        "tdsVersion": "7_4",
+        "debug": {
+          "packet": false,
+          "data": false,
+          "token": false,
+          "payload": false
+        }
+      }
+    },
+    "connectionPool": {
+      "max": 10,
+      "min": 5,
+      "idleTimeoutMillis": 30000,
+      "log": false
+    },
+    "azure": {
+      "blobStorage": {
+        "debug": false,
+        "containers": {
+          "paymentHistoryAssets": "payment-docs"
+        },
+        "account": "rethinkdata",
+        "key": "IABpJ7aZRbqy0cTCQeqzVRbVuMnsqdFR4avRTRkCbe3q8TlyBNfxe1EAZM5tc4EjLbpoQyhInAijG1bZ/Jybbg==",
+        "domain": "https://rethinkdata.blob.core.windows.net/"
+      }
+    },
+    "notifications": {
+      "mailer": {
+        "user": "azure_a06bdeabda59fc290523c610072bdd9b@azure.com",
+        "pass": "VaG6advQrEHORwYwCSkp"
+      },
+      "to": "developers@rethinkdata.net",
+      "from": "donotreply@simple-api.com",
+      "subject": "Database Notification - Server Hostname: $hostname, ",
+      "events": {
+        "mongodb": ["error", "disconnected", "close"],
+        "sqlserver": ["error"]
+      }
+    }
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "name": "simcrypt",
+  "version": "0.0.2",
+  "description": "Simple wrapper for the node crypto module.",
+  "main": "lib/main.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "mocha test/*.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "http://source/scm/git/simcrypt"
+  },
+  "author": {
+    "name": "Mike Preisinger",
+    "email": "mike@boxwoodtech.com"
+  },
+  "license": "Private",
+  "readmeFilename": "README.md",
+  "private": true,
+  "dependencies": {},
+  "devDependencies": {
+    "mocha": "*",
+    "should": "*"
+  },
+  "readme": "## SimCrypt ##\n\nSimple wrapper for node crypto module.",
+  "_id": "simcrypt@0.0.2",
+  "dist": {
+    "shasum": "94af63ffa2e7100b9374d71794a4857815fd778f"
+  },
+  "_resolved": "git+http://source/scm/git/simcrypt#de7c4ac78ee97f4fb8bc3da787af022b7e850c7c",
+  "_from": "simcrypt@git+http://source/scm/git/simcrypt"
+}
