@@ -41,6 +41,19 @@
   "scripts": {
     "test": "mocha test/index.js --reporter spec --slow 500"
   },
+  "files": [
+    adminData.js,
+    apiData.js,
+    billing.js,
+    config.js,
+    database,
+    datastore,
+    Gruntfile.js,
+    modules,
+    testData.js,
+    test,
+    tools
+  ],
   "author": "",
   "license": "Private",
   "private": true
